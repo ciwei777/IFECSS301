@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 300px;
+        margin: 200px auto;
+        text-align: center;
+      }
+      .top {
+        margin-bottom: 50px;
+      }
+      .top h3 {
+        font-size: 28px;
+        font-weight: 400;
+        transition: all 0.5s;
+      }
+      .top .bar {
+        margin: 0 auto;
+        width: 0;
+        height: 4px;
+        transition: all 0.5s;
+      }
+      .top .changeH3 {
+        color: #3366ff;
+      }
+      .top .changeBar {
+        width: 100px;
+        background-color: #3366ff;
+      }
+      button {
+        font-size: 24px;
+        border: none;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h3>前端学院</h3>
+        <div class="bar"></div>
+      </div>
+      <div class="bottom">
+        <button>切换样式</button>
+      </div>
+    </div>
+    <script>
+      var btn = document.getElementsByTagName("button")[0];
+      var bar = document.getElementsByClassName("bar")[0];
+      var h3 = document.getElementsByTagName("h3")[0];
+      btn.addEventListener("click", e => {
+        bar.classList.contains('changeBar') ? bar.classList.remove("changeBar") : bar.classList.add("changeBar");
+        h3.classList.contains('changeH3') ? h3.classList.remove("changeH3") : h3.classList.add("changeH3");
+      });
+    </script>
+  </body>
+</html>

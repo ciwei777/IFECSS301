@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .box {
+        float: left;
+        width: 100px;
+        height: 100px;
+      }
+      .borderRadius1 {
+        margin: 300px 50px;
+        border: 1px solid red;
+        border-radius: 10px;
+      }
+      .borderRadius2 {
+        margin: 300px 100px;
+        border: 1px solid red;
+        border-radius: 10px 20px 30px 40px;
+      }
+      .borderRadius3 {
+        margin: 300px 150px;
+        border: 1px solid red;
+        border-radius: 10px 20px 30px 40px / 40px 30px 20px 10px;
+      }
+      .transition1 {
+        margin: 300px 200px;
+        transition: width 1s;
+        background-color: hotpink;
+      }
+      .transition1:hover {
+        width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        任务一所需知识点:
+        01、CSS3 圆角
+        02、CSS3 过渡
+        03、JS 点击事件
+     -->
+    <!-- 
+         border-radius 
+        用于给边框添加圆角
+         border-radius：[ <length> | <percentage> ]{1,4} [ / [ <length> | <percentage> ]{1,4} ]?
+        <length>：用长度值设置对象的圆角半径长度。不允许负值
+        <percentage>：用百分比设置对象的圆角半径长度。不允许负值
+     -->
+    <div class=" box borderRadius1"></div>
+    <div class=" box borderRadius2"></div>
+    <div class=" box borderRadius3"></div>
+    <!-- 
+        transition
+        css的属性值在一定的时间区间内平滑地过渡
+
+        语法：
+        transition ：[<'transition-property'> || <'transition-duration'> ||
+        <'transition-timing-function'> || <'transition-delay'> [, [<'transition-property'> 
+        || <'transition-duration'> || <'transition-timing-function'> || <'transition-delay'>]]* 
+
+        transition-property ： none | all | [ <ident> ] [, <ident> ]*检索或设置对象中的参与过渡的属性
+        transition-duration ： <time> [, <time>]*检索或设置对象过渡的持续时间
+        
+        transition-timing-function ：ease | linear | ease-in | ease-out | ease-in-out | step-start 
+        | step-end | steps(<integer>[, [ start | end ] ]?) | cubic-bezier(<number>, <number>, <number>, <number>)
+        [,ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end | steps(<integer>[, 
+        [ start | end ] ]?) | cubic-bezier(<number>, <number>, <number>, <number>)]*
+        检索或设置对象中过渡的动画类型
+        
+        transition-delay ： <time> [, <time>]* 检索或设置对象延迟过渡的时间
+     -->
+    <div class="box transition1"></div>
+  </body>
+</html>
