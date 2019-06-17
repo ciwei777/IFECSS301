@@ -6,7 +6,7 @@
 ## CSS3圆角
 ### border-radius  用于给边框添加圆角
 
-![圆角原理](C:\Users\Administrator\Desktop\IFE\css\01\source1.png ''圆角的水平和垂直半径'')
+![圆角原理](https://github.com/ciwei777/IFECSS301/blob/master/images/source1.png ''圆角的水平和垂直半径'')
 
 #### 原理：
 	想要真正玩转圆角，还是先要学习理解其原理
